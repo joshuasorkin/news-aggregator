@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-const requestParser = require('./request-parser');
-const companyIterator = require('./company-iterator');
-const responsePreparer = require('./response-preparer');
+const requestParser = require('../request-parser');
+const companyIterator = require('../company-iterator');
+const responsePreparer = require('../response-preparer');
 
 /* GET content from news sources */
 router.get('/', function(req, res, next) {
